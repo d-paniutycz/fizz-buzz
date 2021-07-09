@@ -56,7 +56,7 @@ But there is a problem - reusable code is meant to be reused, everytime we want 
 source: [Wikipedia](https://en.wikipedia.org/wiki/Fizz_buzz)
 
 ### SOLID implementation
-[SOLID](https://en.wikipedia.org/wiki/SOLID) is a set of principles for a better code quality. Second principle states that the code should be open for extension and closed for modification. Adding a new rule to the game should have no consequences elsewhere, and the current code should be not modified directly. This implementation covers other principles asswell.
+[SOLID](https://en.wikipedia.org/wiki/SOLID) is a set of principles for a better code quality. Second principle states that the code should be open for extension and closed for modification. Adding a new rule to the game should have no consequences elsewhere, and the current code should be not modified directly. This implementation covers other principles aswell.
 
 #### Architecture
 The implementation consists of three related logic layers, each layer is responsible for one task and can be replaced or extended at will. The first layer is the `Game` class and is responsible for the game flow. The second layer is a `Ruleset` collection which is the manager, responsible for controlling all operations on provided rules. The third layer are the `Rule` classes where the logical check take place. Each game has single ruleset which may contain multiple rules. For extension and usage examples see the [examples](./examples) directory.
